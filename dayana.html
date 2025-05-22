@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        <label for=""> Nombre</label>
+        <input type="text" id="txtNombre"> <br>
+        <label for=""> edad</label>
+        <input type="text" id="txtEdad"> <br>
+        <label for=""> estatura</label>
+        <input type="text" id="txtEstatura"> <br>
+        <label for=""> sexo</label>
+        <input type="text" id="txtSexo"> <br>
+        <button type="button" onclick="enviar()">enviar</button>
+    </form>
+    <script>
+        function enviar() {
+            nombreAspirante = document.getElementById("txtNombre").value
+            edadAspirante = document.getElementById("txtEdad").value
+            estatura = document.getElementById("txtEstatura").value
+            sexo = document.getElementById("txtSexo").value
+            if ((edadAspirante >= 18) && (estatura >= 1.70) && (sexo == "masculino")) {
+                alert("Bienvenido " + nombreAspirante + " al Equipo de Baloncesto!!")
+            } else {
+                if ((edadAspirante >= 18) && (estatura >= 1.60) && (sexo == "femenino")) {
+                    alert("Bienvenida " + nombreAspirante + " al Equipo de Baloncesto!!")
+                } else {
+                    alert("lo sentimos, no eres apto para este deporte")
+                }
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <script>
+      operacion = prompt("Introduzca la operacion que va realizar");
+
+      if (operacion == "+") {
+        sumaPrimerNumero = prompt("Ingrese primer numero");
+        sumaSegundoNumero = prompt("Ingrese segundo numero");
+        suma = parseInt(sumaPrimerNumero) + parseInt(sumaSegundoNumero);
+        document.write("La suma es: ");
+        document.write(suma);
+
+        alert("La suma es: " + suma);
+      }
+
+      if (operacion == "-") {
+        restaPrimerNumero = prompt("Ingrese primer numero");
+        restaSegundoNumero = prompt("Ingrese segundo numero");
+        resta = parseInt(restaPrimerNumero) - parseInt(restaSegundoNumero);
+        document.write("La resta es: ");
+        document.write(resta);
+
+        alert("La resta es: " + resta);
+      }
+
+      if (operacion == "*") {
+        multiPrimerNumero = prompt("Ingrese primer numero");
+        multiSegundoNumero = prompt("Ingrese segundo numero");
+        multi = parseInt(multiPrimerNumero) * parseInt(multiSegundoNumero);
+        document.write("La multiplicacion es: ");
+        document.write(multi);
+
+        alert("La multiplicacion es: " + multi);
+      }
+
+      if (operacion == "/") {
+        divicionPrimerNumero = prompt("Ingrese primer numero");
+        divicionSegundoNumero = prompt("Ingrese segundo numero");
+        divicion =
+          parseInt(divicionPrimerNumero) / parseInt(divicionSegundoNumero);
+        document.write("La divicion es: ");
+        document.write(divicion);
+
+        alert("La divicion es: " + divicion);
+      }
+    </script>
+  </body>
+</html>

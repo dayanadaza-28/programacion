@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VARIEDAD DD</title>
+    <SCRipt>
+        inventario = JSON.parse(localStorage.getItem("inventario")) || []
+        function save() {
+            producto = {}
+            producto.Codigo = document.getElementById("txtCodigo").value
+            producto.Nombre = document.getElementById("txtNombre").value
+            producto.Stock = document.getElementById("txtStock").value
+            producto.Valor = document.getElementById("txtvalor").value
+            inventario.push(producto)
+            localStorage.setItem("inventario",JSON.stringify(inventario))
+            alert("Guardado satisfactoriamente")
+            document.getElementById("txtCodigo").value = ""
+            document.getElementById("txtNombre").value = ""
+            document.getElementById("txtStock").value = ""
+            document.getElementById("txtvalor").value = ""
+        }
+        function consultar() {
+            Codigo = document.getElementById("txtCodigo").value
+             inventario = JSON.parse(localStorage.getItem("inventario")) || []
+            for (const producto of inventario) {
+                console.log(producto);
+                
+                if (producto.Codigo == Codigo) {
+                    document.getElementById("txtNombre").value = producto.Nombre
+                    document.getElementById("txtStock").value = producto.Stock
+                    document.getElementById("txtvalor").value = producto.Valor   
+                }
+            }
+        }
+    </SCRipt>
+</head>
+<body>
+    <CENter>
+        <h1>Variedad DD</h1>
+
+        <form action="">
+            <label for=""> Codigo</label>
+            <input type="text" id="txtCodigo"> <br>
+            <label for=""> Nombre</label>
+            <input type="text" id="txtNombre"> <br>
+            <label for=""> Stock</label>
+            <input type="text" id="txtStock"> <br>
+            <label for=""> valor</label>
+            <input type="text" id="txtvalor"> <br>
+            <button type="button" onclick="save()">Guardar</button>
+            <button type="button" onclick="consultar()">Consultar</button>
+             <button type="button" onclick="eliminar()">eliminar</button>
+              <button type="button" onclick="actualizar()">actualizar</button>
+              <button type="button" onclick="listar()">listar</button>
+        </form>
+    </CENter>
+</body>
+
+</html>
