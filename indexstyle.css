@@ -6,6 +6,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .container {
@@ -20,6 +21,23 @@ body {
 h1 {
   color: #e42ecb;
   margin-bottom: 10px;
+}
+h2 {
+  color: rgb(45, 25, 226);
+}
+
+p {
+  color: black;
+}
+
+ul {
+  color: black;
+}
+ol {
+  color: black;
+}
+.colortd {
+  color: #361592;
 }
 
 /* Encabezado */
@@ -42,7 +60,6 @@ llllllllllllllllll,
 
 /* Enlaces */
 #links {
-  text-align: center;
   padding: 10px;
   background-color: #bdc3c7;
   margin-bottom: 20px;
@@ -50,9 +67,8 @@ llllllllllllllllll,
 
 #links a {
   text-decoration: none;
-  color: #29b976;
+  color: #121312;
   margin: 0 10px;
-  font-weight: bold;
 }
 
 #links a:hover {
@@ -75,6 +91,9 @@ llllllllllllllllll,
 .tasks ol {
   margin: 0;
   padding: 0 20px;
+  li::marker {
+    color: blue;
+  }
 }
 
 .hobbies li,
@@ -87,9 +106,9 @@ llllllllllllllllll,
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
-  background-color: #ffffff;
+  background-color: #c5d1cc;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(215, 6, 223, 0.1);
 }
 
 .schedule table {
@@ -105,7 +124,7 @@ llllllllllllllllll,
 }
 
 .schedule th {
-  background-color: #3498db;
+  background-color: #cc89d4;
   color: white;
 }
 
@@ -130,7 +149,7 @@ llllllllllllllllll,
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #70a2c4;
 }
 
 .contact-form button {
@@ -142,4 +161,10 @@ llllllllllllllllll,
 
 .contact-form button:hover {
   background-color: #2ecc71;
+}
+
+.colorlista {
+  li::marker {
+    color: red;
+  }
 }
