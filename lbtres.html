@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mi</title>
+    <style>
+      /* General */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 10px;
+      }
+
+      /* Encabezado */
+      #about-me {
+        text-align: center;
+        padding: 20px;
+        background-color: #ecf0f1;
+        margin-bottom: 20px;
+      }
+
+      #about-me h1 {
+        font-size: 2rem;
+      }
+
+      #about-me img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
+      }
+
+      /* Enlaces */
+      #links {
+        text-align: center;
+        padding: 10px;
+        background-color: #bdc3c7;
+        margin-bottom: 20px;
+      }
+
+      #links a {
+        text-decoration: none;
+        color: #2980b9;
+        margin: 0 10px;
+        font-weight: bold;
+      }
+
+      #links a:hover {
+        text-decoration: underline;
+        color: #34495e;
+      }
+
+      /* Secciones de listas */
+      .hobbies,
+      .tasks {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .hobbies ul,
+      .tasks ol {
+        margin: 0;
+        padding: 0 20px;
+      }
+
+      .hobbies li,
+      .tasks li {
+        margin-bottom: 5px;
+      }
+
+      /* Tabla */
+      .schedule {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .schedule table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+      }
+
+      .schedule th,
+      .schedule td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .schedule th {
+        background-color: #3498db;
+        color: white;
+      }
+
+      .schedule td {
+        background-color: #f4f4f4;
+      }
+
+      /* Formulario */
+      .contact-form {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .contact-form input,
+      .contact-form button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .contact-form button {
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #2ecc71;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Encabezados y párrafos -->
+    <div id="about-me">
+      <h1>¡Hola! Dayana Daniela Daza Daza</h1>
+      <h2>Bienvenido a mi página personal</h2>
+      <p>
+        Este sitio web fue creado como una presentación básica sobre mí y mis
+        intereses.
+      </p>
+      <p>
+        Me llamo Juan, soy estudiante de desarrollo web y me apasiona el diseño,
+        la tecnología y aprender cosas nuevas.
+      </p>
+      <img src="mi-foto.jpg" alt="Foto de Dayana Daza" />
+    </div>
+
+    <!-- Enlaces a redes sociales -->
+    <div id="links">
+      <h2>Mis Redes Sociales</h2>
+      <a href="https://www.facebook.com/miusuario" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/miusuario" target="_blank"
+        >Instagram</a
+      >
+      <a href="https://www.linkedin.com/in/miusuario" target="_blank"
+        >LinkedIn</a
+      >
+    </div>
+
+    <!-- Lista desordenada -->
+    <div class="hobbies">
+      <h2>Mis Pasatiempos</h2>
+      <ul>
+        <li>Leer libros</li>
+        <li>Jugar videojuegos</li>
+        <li>Escuchar música</li>
+      </ul>
+    </div>
+
+    <!-- Lista ordenada -->
+    <div class="tasks">
+      <h2>Tareas Pendientes</h2>
+      <ol>
+        <li>Hacer oficio</li>
+        <li>Estudiar HTML y CSS</li>
+        <li>Preparar presentación</li>
+      </ol>
+    </div>
+
+    <!-- Tabla de horarios -->
+    <div class="schedule">
+      <h2>Mi Horario Semanal</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Día</th>
+            <th>Actividad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lunes</td>
+            <td>Estudiar HTML y CSS</td>
+          </tr>
+          <tr>
+            <td>Miércoles</td>
+            <td>Hacer oficio</td>
+          </tr>
+          <tr>
+            <td>Viernes</td>
+            <td>Preparar presentación</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="contact-form">
+      <h2>Formulario de Contacto</h2>
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="motivo">Motivo del contacto:</label>
+        <input type="text" id="motivo" name="motivo" />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
