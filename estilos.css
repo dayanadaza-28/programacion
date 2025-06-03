@@ -1,0 +1,199 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER PRINCIPAL */
+#idheader {
+    background-color: #0a1128;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    height: 100px;
+}
+
+/* LOGO */
+#logotipo {
+    width: 80px;
+    height: auto;
+}
+
+/* MENÚ DE BOTONES */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* BOTONES DEL MENÚ */
+#boton1, #boton2, #boton3 {
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer SOLID;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* EFECTO HOVER */
+#boton1:hover, #boton2:hover, #boton3:hover {
+    background-color: white;
+    color: #0a1128;
+}
+
+/* BOTÓN CARRITO */
+#carrito {
+    font-size: 20px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* EFECTO HOVER CARRITO */
+#carrito:hover {
+    background-color: white;
+    color: #0a1128;
+}
+
+
+ :root {
+      --primary:  #0a1128;
+      --background: #f4f4f4;
+      --card-bg: #ffffff;
+      --text-color: #333;
+    }
+
+    body.dark-mode {
+      --primary: #ffc107;
+      --background: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--background);
+      color: var(--text-color);
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+
+
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      position: relative;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+   
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: var(--primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: red;
+      color: white;
+      padding: 0.3rem 0.7rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .pagination a {
+      padding: 0.5rem 1rem;
+      background-color: var(--card-bg);
+      border: 1px solid #ccc;
+      text-decoration: none;
+      border-radius: 5px;
+      color: var(--text-color);
+    }
+
+    .pagination a:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--primary);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+   .card-price{
+    font-size:  1rem;
+    color: var(--primary) ;
+    font-weight: bold;
+
+
+   }
